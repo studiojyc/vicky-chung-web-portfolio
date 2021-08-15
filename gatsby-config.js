@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Vicky Chung",
+    author: "Studio JYC",
+    description: "A multidisciplinary independent design studio, based in Sydney. Providing brand development, creative direction and graphic design for clients across a broad range of media."
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -10,7 +12,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/favicon.png",
       },
     },
     "gatsby-plugin-mdx",
@@ -33,4 +35,7 @@ module.exports = {
       __key: "pages",
     },
   ],
+  flags: {
+    DEV_SSR: false
+  }
 };
